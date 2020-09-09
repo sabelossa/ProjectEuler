@@ -1,38 +1,38 @@
+import java.util.ArrayList;
 
 public class Problem2 {
 
-		//INCOMPLETE
+	
+		
 	
 	public static void Problem2Method() {
 		
+		int sum = 0;
 		
+		ArrayList<Integer> fib = new ArrayList<Integer>();
 		
-		
-	}
-	
-	
-	public static void Fib() {
-		
-		
-		
-		System.out.println(Fib(4));
-		
-	}
-	
-	public static int Fib(int n) {
-		
-		
-		
-		if (n == 0) {
-			return 1;
-		}
-		if (n == 1) {
+		int one = 1;
+		int two = 2;
+		fib.add(one);
+		while(two <= 4000000) {
+			fib.add(two);
+			int temp = one;
+			one = two;
+			two = temp + two;
 			
-			return 1;
 		}
-		else {
-			return Fib(n-1) + Fib(n-2);
+		
+		for (int i : fib) {
+			if (i % 2 == 0) {
+				sum+= i;
+			}
 		}
+		
+		System.out.println(sum);
 	}
 	
 }
+	
+		
+		
+
