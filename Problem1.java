@@ -18,7 +18,7 @@ public class Problem1 {
 		
 		
 	int sum = 0;
-	System.out.println("Question1");
+	
 	for (int i = 1; i < n; i++) {
 		
 		if (i % 5 == 0) {
@@ -30,6 +30,6 @@ public class Problem1 {
 		}
 	
 }
-	System.out.println(sum);
+	System.out.println("Question1 " + sum);
 }
 }
