@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 
-public class Problem2 {
+public class Problem02 {
 
 	
 		
 	
-	public static void Problem2Method() {
+	public static int Problem2Method() {
 		
 		int sum = 0;
 		
@@ -28,11 +28,15 @@ public class Problem2 {
 			}
 		}
 		
-		System.out.println(sum);
+		return sum;
 	}
+	
+	public static void main(String args[]) {
+		
+		System.out.println(Problem2Method());
 	
 }
 	
-		
+}	
 		
 
